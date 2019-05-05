@@ -1,0 +1,27 @@
+<nav>
+  <div class="left">
+    <h1>Welcome to XP Farmer</h1>
+    <ul>
+      <li>
+        <a [routerLink]="['/accueil']" routerLinkActive="active">Accueil</a>
+      </li>
+      <li>
+        <a [routerLink]="['/parametres']" routerLinkActive="active"
+          >Paramètres</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="right" *ngIf="_dataService.user">
+    <div class="content">
+      <div class="hello">
+        Bonjour {{ _dataService.user.firstname }}
+        {{ _dataService.user.lastname }}
+      </div>
+      <app-experience></app-experience>
+    </div>
+    <div class="avatar">
+      <img [src]="_dataService.user.avatar" />
+    </div>
+  </div>
+</nav>

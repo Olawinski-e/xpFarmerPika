@@ -1,0 +1,43 @@
+.experience {
+  width: 250px;
+  position: relative;
+  margin-top: 10px;
+  .bar {
+    width: 100%;
+    background: #811e09;
+    height: 8px;
+    border-radius: 5px;
+  }
+  .barProgess {
+    background: #e19720;
+    height: 8px;
+    position: absolute;
+    top: 0px;
+    width: 0%;
+    transition: all 0.4s;
+    border-radius: 5px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .coucou {
+    color: #811e09;
+    margin-top: 6px;
+  }
+  .percent {
+    color: black;
+    position: absolute;
+    top: -4px;
+    left: -45px;
+    font-weight: bold;
+  }
+  .level {
+    margin-right: 5px;
+    font-weight: bold;
+    color: #811e09;
+  }
+  .stats {
+    font-style: italic;
+    color: #811e09;
+  }
+}

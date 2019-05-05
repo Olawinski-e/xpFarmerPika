@@ -1,0 +1,91 @@
+nav {
+  height: 120px;
+  .left {
+    height: 120px;
+    display: inline-block;
+    width: 50%;
+    h1 {
+      line-height: 120px;
+      color: black;
+      float: left;
+      padding: 0;
+      margin: 0 100px 0 30px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      float: left;
+      height: 120px;
+      li {
+        list-style: none;
+        float: left;
+        a {
+          line-height: 120px;
+          color: #811e09;
+          opacity: 0.7;
+          text-decoration: none;
+          padding: 0 20px;
+          font-size: 18px;
+          position: relative;
+          transition: all 0.2s;
+        }
+        a:hover {
+          opacity: 1;
+        }
+        a.active {
+          opacity: 1;
+
+          &:after {
+            content: "";
+            display: block;
+            width: 40%;
+            height: 2px;
+            background: #f62d14;
+            position: absolute;
+            border-radius: 5px;
+            top: 145%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-name: widthBar;
+            animation-duration: 1s;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    height: 120px;
+    float: right;
+    min-width: 360px;
+    .content {
+      min-width: 264px;
+      height: 120px;
+
+      float: left;
+
+      .hello {
+        margin-top: 30px;
+        color: black;
+        font-size: 16px;
+      }
+    }
+    .avatar {
+      img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@keyframes widthBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}

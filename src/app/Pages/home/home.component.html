@@ -1,0 +1,25 @@
+<div class="row-game">
+  <div class="left">
+    <img
+      src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c325.png"
+      alt="hello"
+      width:40
+      class="pika"
+      (click)="click()"
+    />
+  </div>
+  <div class="right">
+    <app-statistiques></app-statistiques>
+  </div>
+</div>
+<button class="shop">
+  <img src="/assets/shop.svg" alt="Shop" />BUY BOOSTERS
+</button>
+<div class="clearfix"></div>
+<div class="row-boosters-actifs" *ngIf="_boosterService.boosters.length">
+  <span
+    *ngFor="let booster of (_boosterService.boosters | filterBooster: true)"
+  >
+    <app-booster [passBooster]="booster"></app-booster>
+  </span>
+</div>

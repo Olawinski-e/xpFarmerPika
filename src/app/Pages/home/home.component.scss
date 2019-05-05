@@ -1,0 +1,67 @@
+.row-game {
+  background: #e19720;
+  min-height: 300px;
+  border-top: rgba($color: #fff, $alpha: 0.1) 1px solid;
+  position: relative;
+
+  .left {
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    min-height: 300px;
+    bottom: 0px;
+
+    .pika {
+      height: 100px;
+      line-height: 70px;
+      background: transparent;
+      position: absolute;
+      top: 50%;
+      margin-top: -40px;
+      left: 50%;
+      margin-left: -112px;
+    }
+    .pika:active {
+      height: 120px;
+    }
+  }
+
+  .right {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    bottom: 0px;
+    min-height: 300px;
+    border-left: rgba($color: #fff, $alpha: 0.1) 1px solid;
+  }
+}
+button.shop {
+  background: #811e09;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 20px;
+  width: 185px;
+  margin: auto auto;
+  position: relative;
+  display: block;
+  margin-top: -22px;
+  outline: none;
+  transition: all 0.2s;
+  opacity: 0.8;
+  img {
+    height: 27px;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-right: 5px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}

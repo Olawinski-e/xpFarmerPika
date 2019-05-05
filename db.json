@@ -1,0 +1,49 @@
+{
+  "userConnected": {
+    "firstname": "Sacha",
+    "lastname": "De Bourg Palette",
+    "avatar": "https://vignette.wikia.nocookie.net/pokemonworld/images/6/6b/Sacha.png/revision/latest?cb=20130515162819&path-prefix=fr",
+    "stats": {
+      "money": 8533364694,
+      "level": 100,
+      "levelPoint": 0
+    }
+  },
+  "game": {
+    "title": "ANG XP FARMER",
+    "description": "Devient le cliqueur le plus performant !",
+    "configuration": {
+      "levelBase": 100,
+      "levelRatio": 1.06,
+      "gainExperience": 10,
+      "gainExperienceRatio": 1.05,
+      "gainMoney": 1,
+      "gainMoneyRatio": 1.2,
+      "boosterPriceRatio": 1.5
+    }
+  },
+  "boosters": [
+    {
+      "label": "+{value} per Click",
+      "value": 15,
+      "type": "click-add",
+      "price": 1000,
+      "actif": true,
+      "timer": 5,
+      "cooldown": 120,
+      "level": 1,
+      "nextLevelRatioValue": 2,
+      "nextLevelRatioPrice": 5
+    },
+    {
+      "label": "+{value} per seconde",
+      "value": 10,
+      "type": "timer-auto",
+      "price": 8000,
+      "actif": false,
+      "level": 1,
+      "nextLevelRatioValue": 2,
+      "nextLevelRatioPrice": 5
+    }
+  ]
+}

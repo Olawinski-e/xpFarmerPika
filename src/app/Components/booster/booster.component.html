@@ -1,0 +1,7 @@
+<div *ngIf="booster">
+  <p>{{ booster.label }}</p>
+  <p>{{ booster.timer }}</p>
+  <p>{{ booster.value }}</p>
+  <button (click)="runBooster()" [disabled]="inProgress">click</button>
+  <p *ngIf="timer">{{ timerProgress + "/" + booster.timer }}</p>
+</div>

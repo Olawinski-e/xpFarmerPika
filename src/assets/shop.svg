@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.389 23.487">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 0.706px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="if_pack_2427698" transform="translate(-736.083 -477.334)">
+    <path id="path4497" class="cls-1" d="M13.811,309.453,2.469,303.267V292.956l11.342-6.186,11.342,6.186v10.311Z" transform="translate(733.966 190.966)"/>
+    <path id="path4499" class="cls-1" d="M2.469,288.886l11.342,6.186,11.342-6.186" transform="translate(733.966 195.034)"/>
+    <path id="path4501" class="cls-2" d="M6.35,295.073l11.342-6.186V299.2L6.35,305.383Z" transform="translate(741.427 195.035)"/>
+    <path id="path5283" class="cls-3" d="M6.334,298.8l.129-2.513,10.053-6.7L14.936,288.2l-10.7,7.088-.193,3.061Z" transform="translate(736.997 193.721)"/>
+    <path id="path4498" class="cls-2" d="M4.233,298.335v-4.059l10.311-6.735,2.062,1.126L6.3,295.41V299.4Z" transform="translate(737.358 192.448)"/>
+  </g>
+</svg>

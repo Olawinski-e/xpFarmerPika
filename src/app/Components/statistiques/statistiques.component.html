@@ -1,0 +1,14 @@
+<div style="padding-top: 15px; padding-left: 50px;" *ngIf="_dataService.user && _dataService.config">
+  <h1>Statistiques :</h1>
+  <ul>
+    <li style="list-style: none; line-height: 40px;">
+      Mon argent en stock : <span style="font-weight: bold; margin-left: 5px">{{_dataService.user.stats.money}} €</span>
+    </li>
+    <li style="list-style: none; line-height: 40px;">
+      Combien je gagne par click : <span style="font-weight: bold; margin-left: 5px">{{ getCurrentMoney(_dataService.user.stats.level) }} €</span>
+    </li>
+    <li style="list-style: none; line-height: 40px;">
+      AutoClicks par secondes : xxx
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+<div class="experience" *ngIf="_dataService.user && _dataService.config">
+  <div class="bar"></div>
+  <div class="barProgess" #progressBar></div>
+  <p class="coucou">
+    <span class="level">Lvl {{ _dataService.user.stats.level }}</span> :
+    <span class="stats">{{ getAvancementInformation() }} XP</span>
+  </p>
+  <span class="percent"> {{ getPourcentage() }} % </span>
+</div>
